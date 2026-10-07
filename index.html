@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DOLLARTINO · Content · Community</title>
+<meta name="description" content="Dollartino (@dollartino_005). Web3 content, community, and ambassador work. Open for paid work." />
+<meta property="og:image" content="assets/avatar.jpg" />
+<style>
+  :root { --bg:#0c0708; --card:#171012; --card2:#211416; --line:#3a2226; --gold:#f43f5e; --gold2:#fff1f2; --text:#fff7f7; --mute:#f0d5d8; --soft:#a8888c; }
+  [data-theme="light"] { --bg:#fff7f7; --card:#fff; --card2:#fff1f2; --line:#f3d6da; --gold:#be123c; --gold2:#9f1239; --text:#1a0a0c; --mute:#5c3338; --soft:#a8888c; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.16em; font-size:12px; color:var(--gold2); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { color:var(--gold); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  h1 { font-size:clamp(40px, 6vw, 72px); font-weight:800; letter-spacing:-.05em; line-height:.9; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; } .sub b { color:var(--gold); }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(244,63,94,.12); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
+  .fill { background:var(--gold); color:#fff; border-color:var(--gold); }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:1; object-fit:cover; object-position:top; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:720px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; }
+  .work { margin-bottom:12px; }
+  .shot { width:100%; border-radius:12px; margin:12px 0; border:1px solid var(--line); }
+  .work a { color:var(--gold); font-weight:600; font-size:13px; display:inline-block; margin-top:8px; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">DOLLARTINO</a><nav><a href="#work">Work</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Light</button></nav></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="avail">Open for paid work and collabs</p>
+      <h1>DOLLARTINO</h1>
+      <p class="sub">Content <b>·</b> Community <b>·</b> KOL</p>
+      <div class="obj"><small>// objective_</small>Visibility, the right room, and content that does not sound like a script.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/dollartino_005" target="_blank" rel="noopener">DM on X</a><a class="btn" href="https://t.me/Dollartino" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+    <div class="portrait"><img src="assets/avatar.jpg" alt="Dollartino" /><div class="chips"><span class="chip">@dollartino_005</span><span class="chip">3.7K on X</span><span class="chip">Ambassador</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Web3 creator. Community growth, research, and the posts that put a project in front of the right people. Alpha threads and investment notes sit next to the community work.</p>
+    <p class="lead">Open for paid content, ambassador seats, and long collabs.</p>
+    <div class="stats"><div class="stat"><strong>3.7K</strong><span>X followers</span></div><div class="stat"><strong>Sancus</strong><span>Ambassador, approved</span></div><div class="stat"><strong>Altura</strong><span>Applied, June</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><h3>Content</h3><p>X posts, research, and ecosystem notes.</p></article>
+      <article class="card"><h3>Community</h3><p>Management, moderation, and the room that stays.</p></article>
+      <article class="card"><h3>KOL</h3><p>Ambassador campaigns and outreach.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// proof_</p><h2>Selected work</h2>
+    <div class="grid2">
+      <article class="work">
+        <p class="kicker">SANCUS · 23 SEP</p>
+        <h3>Ambassador, approved</h3>
+        <p>Official approval for the Sancus Ambassador Program, with the NDA.</p>
+        <img class="shot" src="assets/sancus.jpg" alt="Sancus ambassador approval" />
+      </article>
+      <article class="work">
+        <p class="kicker">ALTURA · JUNE</p>
+        <h3>The application</h3>
+        <p>He sent the profile when Altura opened ambassador seats. Congrats in advance came back.</p>
+        <img class="shot" src="assets/altura.jpg" alt="Altura ambassador thread" />
+        <a href="https://x.com/dollartino_005" target="_blank" rel="noopener">Open the profile →</a>
+      </article>
+      <article class="work">
+        <p class="kicker">ALPHIO · 18 SEP</p>
+        <h3>Samples, sent</h3>
+        <p>Work samples sent to Alphio. They pointed him to Telegram to continue.</p>
+        <img class="shot" src="assets/alphio.jpg" alt="Alphio outreach screenshot" />
+      </article>
+    </div>
+    <div class="quote">“You’ve officially been approved for the Sancus Ambassador Program.”<small>23 September. The seat, in writing.</small></div>
+  </section>
+  <section class="hire" id="hire">
+    <p class="kicker">// let’s work_</p><h2>Open for paid work</h2>
+    <p class="lead">A campaign, a community seat, or a content brief.</p>
+    <div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/dollartino_005">@dollartino_005</a><a class="btn" href="https://t.me/Dollartino">Telegram</a></div>
+  </section>
+</main>
+<footer class="wrap"><span>DOLLARTINO</span><span>@dollartino_005</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const l=document.body.dataset.theme==="light";document.body.dataset.theme=l?"":"light";btn.textContent=l?"Light":"Dark";};</script>
+</body>
+</html>
